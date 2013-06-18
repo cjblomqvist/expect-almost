@@ -30,8 +30,8 @@ module.exports = function (expect) {
 
     this.assert(
         this.obj >= start && this.obj <= finish
-      , 'expected ' + i(this.obj) + ' to be within ' + range
-      , 'expected ' + i(this.obj) + ' to not be within ' + range);
+      , 'expected ' + expect.stringify(this.obj) + ' to be within ' + range
+      , 'expected ' + expect.stringify(this.obj) + ' to not be within ' + range);
 
     return this;
   };
